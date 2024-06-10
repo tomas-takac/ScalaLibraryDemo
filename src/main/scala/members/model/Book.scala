@@ -1,0 +1,3 @@
+package members.model
+
+case class Book(title: String, author: String, year: Int, genre: String)

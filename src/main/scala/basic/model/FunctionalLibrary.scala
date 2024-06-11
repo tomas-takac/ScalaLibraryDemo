@@ -9,7 +9,7 @@ class FunctionalLibrary {
 
   def addBook(newBook: Book): BookAdditionResult = {
     if (bannedBookTitles.contains(newBook.title)) {
-      BookNotPermitted
+      BookBanned
     } else if(books.contains(newBook)) {
       BookAlreadyPresent
     } else {
@@ -38,7 +38,7 @@ object FunctionalLibrary {
   }
 
   object BookAddedFailure {
-    case object BookNotPermitted extends BookAddedFailure
+    case object BookBanned extends BookAddedFailure
   }
 
   private val bannedBookTitles: Set[String] = Set("50 shades of gray")

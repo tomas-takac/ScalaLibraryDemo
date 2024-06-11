@@ -4,7 +4,7 @@ import basic.model.{Book, FunctionalLibrary}
 
 object ScalaFunctionalLibraryDemo extends App{
 
-  private val library = new FunctionalLibrary
+  val library = new FunctionalLibrary
   val book1 = Book("Title1", "Author1", 2001)
   val bannedBook = Book("50 shades of gray", "Author4", 2005)
 

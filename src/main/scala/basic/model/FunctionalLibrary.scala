@@ -29,9 +29,9 @@ class FunctionalLibrary {
 }
 
 object FunctionalLibrary {
-  trait BookAdditionResult
-  trait BookAddedSuccess extends BookAdditionResult
-  trait BookAddedFailure extends BookAdditionResult
+  sealed trait BookAdditionResult
+  sealed trait BookAddedSuccess extends BookAdditionResult
+  sealed trait BookAddedFailure extends BookAdditionResult
   object BookAddedSuccess {
     case object BookAddedSuccessfully extends BookAddedSuccess
     case object BookAlreadyPresent extends BookAddedSuccess

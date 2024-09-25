@@ -2,7 +2,7 @@ package members
 
 import members.model.{Book, Library, Member}
 
-object ScalaLibraryDemo2 extends App {
+object ScalaLibraryDemo extends App {
 
   val library = new Library()
 
